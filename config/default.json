@@ -1,4 +1,4 @@
 {
-    "mongoURI": "abc",
-    "JWTsecret": "my secret token"
+  "mongoURI": "abc",
+  "JWTsecret": "my secret token"
 }

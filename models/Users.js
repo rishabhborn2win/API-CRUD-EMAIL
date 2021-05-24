@@ -14,6 +14,24 @@ const UserSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  emails: {
+    received: [
+      {
+        id: {
+          type: mongoose.Schema.Types.ObjectId,
+          ref: "mail",
+        },
+      },
+    ],
+    sent: [
+      {
+        id: {
+          type: mongoose.Schema.Types.ObjectId,
+          ref: "mail",
+        },
+      },
+    ],
+  },
   date: {
     type: Date,
     default: Date.now,
