@@ -8,7 +8,7 @@ npm run start -  To start the server
 # User Route
 
 1) To Register User: POST /api/users  with body {name, email, password} PUBLIC
-2) To get auth token: POST /api/users/gettoke  with body {email, password};  (x-auth-token in header is required) PUBLIC
+2) To get auth token: POST /api/users/gettoke  with body {email, password}; PUBLIC
 3) To load the user: GET /api/users (x-auth-token is required) PRIVATE
 
 # Mail Route
