@@ -17,7 +17,7 @@ const UserSchema = new mongoose.Schema({
   emails: {
     received: [
       {
-        id: {
+        mail: {
           type: mongoose.Schema.Types.ObjectId,
           ref: "mail",
         },
@@ -25,7 +25,7 @@ const UserSchema = new mongoose.Schema({
     ],
     sent: [
       {
-        id: {
+        mail: {
           type: mongoose.Schema.Types.ObjectId,
           ref: "mail",
         },

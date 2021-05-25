@@ -2,25 +2,12 @@ const mongoose = require("mongoose");
 
 const MailSchema = new mongoose.Schema({
   from: {
-    id: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "user",
-    },
-    name: {
-      type: String,
-      required: true,
-    },
+    type: String,
+    required: true,
   },
   to: {
-    id: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "user",
-      required: true,
-    },
-    name: {
-      type: String,
-      required: true,
-    },
+    type: String,
+    required: true,
   },
   subject: {
     type: String,
@@ -40,14 +27,8 @@ const MailSchema = new mongoose.Schema({
   replies: [
     {
       from: {
-        id: {
-          type: mongoose.Schema.Types.ObjectId,
-          ref: "user",
-        },
-        name: {
-          type: String,
-          required: true,
-        },
+        type: String,
+        required: true,
       },
       attachments: [
         {
