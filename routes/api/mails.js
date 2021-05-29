@@ -67,10 +67,10 @@ router.post(
   }
 );
 
-//route     POST api/mail/reply/:mailid
+//route     PUT api/mail/reply/:mailid
 //desc:     Reply to mail
 //access:   private
-router.post(
+router.put(
   "/reply/:mailid",
   auth,
   [check("body", "Body is required for reply").not().isEmpty()],
