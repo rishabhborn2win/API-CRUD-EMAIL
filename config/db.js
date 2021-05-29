@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const config = require("config");
-const db = "mongodb://localhost:27017/tambola";
+const db = "mongodb://localhost:27017/emailApp";
 
 const connectDB = async () => {
   try {
